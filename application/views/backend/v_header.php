@@ -1,147 +1,163 @@
 <body>
-	<!-- Header Section Start -->
-	<div class="header">
-
-		<!-- Start Top Bar -->
-		<div class="top-bar">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-4 col-sm-2">
-						<div class="language-wrapper">
-							<div class="box-language">
-								<form id="form-language">
-									<div class="btn-group toggle-wrap">
-										<span class="toggle">
-											<span><img src="<?= base_url() ?>frontend/assets/img/language/flag-lang.png" alt="English" title="English" height="11" width="16"> English</span>
-											<span class="hidden">Language</span>
-										</span>
-										<ul style="display: none;" class="toggle_cont pull-right">
-											<li>
-												<button class="language-select selected" type="button" name="en-gb">
-													<img src="<?= base_url() ?>frontend/assets/img/language/en-gb.png" alt="English" title="English" height="11" width="16">
-													English </button>
-											</li>
-											<li>
-												<button class="language-select" type="button" name="de-DE">
-													<img src="<?= base_url() ?>frontend/assets/img/language/de-DE.png" alt="Deutsch" title="Deutsch" height="11" width="16">
-													Deutsch </button>
-											</li>
-											<li>
-												<button class="language-select" type="button" name="ru-ru">
-													<img src="<?= base_url() ?>frontend/assets/img/language/ru-ru.png" alt="Русский" title="Русский" height="11" width="16">
-													Русский </button>
-											</li>
-										</ul>
-									</div>
-								</form>
-							</div>
-							<div class="box-currency">
-								<form method="post" id="form-currency">
-									<div class="btn-group toggle-wrap">
-										<span class="toggle">
-											$USD
-										</span>
-										<ul class="toggle_cont pull-right">
-											<li>
-												<button class="currency-select selected" type="button" name="USD">
-													$ USD </button>
-											</li>
-											<li>
-												<button class="currency-select" type="button" name="EUR">
-													€ EUR
-												</button>
-											</li>
-											<li>
-												<button class="currency-select" type="button" name="GBP">
-													£ GBP </button>
-											</li>
-										</ul>
-									</div>
-								</form>
-							</div>
-							<a href="#"><i class="icon-phone"></i> Call Us: (123) 456- 789</a>
-						</div>
-						<div class="clear"></div>
-					</div>
-					<div class="col-md-8 col-sm-10">
-						<!-- shopping cart end -->
-						<div class="search-area">
-							<form>
-								<div class="control-group">
-									<ul class="categories-filter animate-dropdown">
-										<li class="dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="category.html">Categories <span class="caret"></span></a>
-											<ul class="dropdown-menu animated fadeIn">
-												<li class="menu-header">Clothing</li>
-												<li><a tabindex="-1" href="#">- Men</a></li>
-												<li><a tabindex="-1" href="#">- Women</a></li>
-												<li><a tabindex="-1" href="#">- Boys</a></li>
-												<li><a tabindex="-1" href="#">- Girls</a></li>
-												<li class="menu-header">Electronics</li>
-												<li><a tabindex="-1" href="#">- Laptops</a></li>
-												<li><a tabindex="-1" href="#">- Desktops</a></li>
-												<li><a tabindex="-1" href="#">- Cameras</a></li>
-												<li><a tabindex="-1" href="#">- Mobile Phones</a></li>
-											</ul>
-										</li>
-									</ul>
-									<input class="search-field" placeholder="Search here...">
-									<a class="search-button" href="#"><i class="icon-magnifier"></i></a>
-								</div>
-							</form>
-						</div>
-
-						<div class="shop-cart">
-							<ul>
-								<li><a class="cart-icon cart-btn" href="wishlist.html"><span class="icon-heart"></span></a></li>
-								<li>
-									<a href="#" class="cart-icon cart-btn"><i class="icon-basket"></i><span class="cart-label">3</span></a>
-									<div class="cart-box">
-										<div class="popup-container">
-											<div class="cart-entry">
-												<a href="#" class="image">
-													<img src="<?= base_url() ?>frontend/assets/img/products/product-menu-1.jpg" alt="">
-												</a>
-												<div class="content">
-													<a href="#" class="title">Pullover Batwing</a>
-													<p class="quantity">Quantity: 3</p>
-													<span class="price">$45.00</span>
-												</div>
-												<div class="button-x">
-													<i class="icon-close"></i>
-												</div>
-											</div>
-											<div class="cart-entry">
-												<a href="#" class="image">
-													<img src="<?= base_url() ?>frontend/assets/img/products/product-menu-2.jpg" alt="">
-												</a>
-												<div class="content">
-													<a href="#" class="title">Pullover Batwing</a>
-													<p class="quantity">Quantity: 3</p>
-													<span class="price">$90.00</span>
-												</div>
-												<div class="button-x">
-													<i class="icon-close"></i>
-												</div>
-											</div>
-											<div class="summary">
-												<div class="subtotal">Sub Total</div>
-												<div class="price-s">$210.5</div>
-											</div>
-											<div class="cart-buttons">
-												<a href="#" class="btn btn-border-2">View Cart</a>
-												<a href="#" class="btn btn-common">Checkout</a>
-												<div class="clear"></div>
-											</div>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="account link-inline">
-							<a href="login-form.html"><i class="icon-login"></i><span class="hidden-mobile">login/register</span></a>
-						</div>
-					</div>
-				</div>
+	<div class="container-scroller">
+		<!-- partial:partials/_navbar.html -->
+		<nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+			<div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+				<a class="navbar-brand brand-logo" href="index.html"><img src="<?= base_url() ?>backend/images/logo.svg" alt="logo" /></a>
+				<a class="navbar-brand brand-logo-mini" href="index.html"><img src="<?= base_url() ?>backend/images/logo-mini.svg" alt="logo" /></a>
 			</div>
-		</div>
-		<!-- End Top Bar -->
+			<div class="navbar-menu-wrapper d-flex align-items-stretch">
+				<div class="search-field d-none d-md-block">
+					<form class="d-flex align-items-center h-100" action="#">
+						<div class="input-group">
+							<div class="input-group-prepend bg-transparent">
+								<i class="input-group-text border-0 mdi mdi-magnify"></i>
+							</div>
+							<input type="text" class="form-control bg-transparent border-0" placeholder="Search projects">
+						</div>
+					</form>
+				</div>
+				<ul class="navbar-nav navbar-nav-right">
+					<li class="nav-item nav-profile dropdown">
+						<a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+							<div class="nav-profile-img">
+								<img src="<?= base_url() ?>backend/images/faces/face1.jpg" alt="image">
+								<span class="availability-status online"></span>
+							</div>
+							<div class="nav-profile-text">
+								<p class="mb-1 text-black">David Greymaax</p>
+							</div>
+						</a>
+						<div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+							<a class="dropdown-item" href="#">
+								<i class="mdi mdi-cached mr-2 text-success"></i>
+								Activity Log
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">
+								<i class="mdi mdi-logout mr-2 text-primary"></i>
+								Signout
+							</a>
+						</div>
+					</li>
+					<li class="nav-item d-none d-lg-block full-screen-link">
+						<a class="nav-link">
+							<i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+							<i class="mdi mdi-email-outline"></i>
+							<span class="count-symbol bg-warning"></span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+							<h6 class="p-3 mb-0">Messages</h6>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item preview-item">
+								<div class="preview-thumbnail">
+									<img src="<?= base_url() ?>backend/images/faces/face4.jpg" alt="image" class="profile-pic">
+								</div>
+								<div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+									<h6 class="preview-subject ellipsis mb-1 font-weight-normal">Mark send you a message</h6>
+									<p class="text-gray mb-0">
+										1 Minutes ago
+									</p>
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item preview-item">
+								<div class="preview-thumbnail">
+									<img src="<?= base_url() ?>backend/images/faces/face2.jpg" alt="image" class="profile-pic">
+								</div>
+								<div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+									<h6 class="preview-subject ellipsis mb-1 font-weight-normal">Cregh send you a message</h6>
+									<p class="text-gray mb-0">
+										15 Minutes ago
+									</p>
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item preview-item">
+								<div class="preview-thumbnail">
+									<img src="<?= base_url() ?>backend/images/faces/face3.jpg" alt="image" class="profile-pic">
+								</div>
+								<div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+									<h6 class="preview-subject ellipsis mb-1 font-weight-normal">Profile picture updated</h6>
+									<p class="text-gray mb-0">
+										18 Minutes ago
+									</p>
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<h6 class="p-3 mb-0 text-center">4 new messages</h6>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+							<i class="mdi mdi-bell-outline"></i>
+							<span class="count-symbol bg-danger"></span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+							<h6 class="p-3 mb-0">Notifications</h6>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item preview-item">
+								<div class="preview-thumbnail">
+									<div class="preview-icon bg-success">
+										<i class="mdi mdi-calendar"></i>
+									</div>
+								</div>
+								<div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+									<h6 class="preview-subject font-weight-normal mb-1">Event today</h6>
+									<p class="text-gray ellipsis mb-0">
+										Just a reminder that you have an event today
+									</p>
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item preview-item">
+								<div class="preview-thumbnail">
+									<div class="preview-icon bg-warning">
+										<i class="mdi mdi-settings"></i>
+									</div>
+								</div>
+								<div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+									<h6 class="preview-subject font-weight-normal mb-1">Settings</h6>
+									<p class="text-gray ellipsis mb-0">
+										Update dashboard
+									</p>
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item preview-item">
+								<div class="preview-thumbnail">
+									<div class="preview-icon bg-info">
+										<i class="mdi mdi-link-variant"></i>
+									</div>
+								</div>
+								<div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+									<h6 class="preview-subject font-weight-normal mb-1">Launch Admin</h6>
+									<p class="text-gray ellipsis mb-0">
+										New admin wow!
+									</p>
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<h6 class="p-3 mb-0 text-center">See all notifications</h6>
+						</div>
+					</li>
+					<li class="nav-item nav-logout d-none d-lg-block">
+						<a class="nav-link" href="#">
+							<i class="mdi mdi-power"></i>
+						</a>
+					</li>
+					<li class="nav-item nav-settings d-none d-lg-block">
+						<a class="nav-link" href="#">
+							<i class="mdi mdi-format-line-spacing"></i>
+						</a>
+					</li>
+				</ul>
+				<button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+					<span class="mdi mdi-menu"></span>
+				</button>
+			</div>
+		</nav>

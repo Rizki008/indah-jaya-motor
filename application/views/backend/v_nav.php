@@ -1,331 +1,94 @@
-<!-- Start  Logo & Naviagtion  -->
-<nav class="navbar navbar-default" data-spy="affix" data-offset-top="50">
-	<div class="container">
-		<div class="row">
-			<div class="navbar-header">
-				<!-- Stat Toggle Nav Link For Mobiles -->
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-					<i class="fa fa-bars"></i>
-				</button>
-				<a class="navbar-brand" href="index.html">
-					<img src="assets/img/logo.png" alt="">
+<!-- partial -->
+<div class="container-fluid page-body-wrapper">
+	<!-- partial:partials/_sidebar.html -->
+	<nav class="sidebar sidebar-offcanvas" id="sidebar">
+		<ul class="nav">
+			<li class="nav-item nav-profile">
+				<a href="#" class="nav-link">
+					<div class="nav-profile-image">
+						<img src="<?= base_url() ?>backend/images/faces/face1.jpg" alt="profile">
+						<span class="login-status online"></span> <!--change to offline or busy as needed-->
+					</div>
+					<div class="nav-profile-text d-flex flex-column">
+						<span class="font-weight-bold mb-2">David Grey. H</span>
+						<span class="text-secondary text-small">Project Manager</span>
+					</div>
+					<i class="mdi mdi-bookmark-check text-success nav-profile-badge"></i>
 				</a>
-			</div>
-			<div class="navbar-collapse collapse">
-				<!-- Start Navigation List -->
-				<ul class="nav navbar-nav navbar-right">
-					<li>
-						<a class="active" href="index.html">Home <span class="caret"></span></a>
-						<ul class="dropdown">
-							<li>
-								<a class="active" href="index.html">
-									Home V1
-								</a>
-							</li>
-							<li>
-								<a href="index-2.html">
-									Home V2
-								</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="about.html">
-							About
-						</a>
-					</li>
-					<li>
-						<a href="#">Catalog <span class="caret"></span></a>
-						<div class="dropdown mega-menu megamenu1">
-							<div class="row">
-								<div class="col-sm-3 col-xs-12">
-									<ul class="menulinks">
-										<li class="maga-menu-title">
-											<a href="#">Men</a>
-										</li>
-										<li><a href="category.html">Clothing</a></li>
-										<li><a href="category.html">Handbags</a></li>
-										<li><a href="category.html">Maternity</a></li>
-										<li><a href="category.html">Jewelry</a></li>
-										<li><a href="category.html">Scarves</a></li>
-									</ul>
-								</div>
-								<div class="col-sm-3 col-xs-12">
-									<ul class="menulinks">
-										<li class="maga-menu-title">
-											<a href="#">Women</a>
-										</li>
-										<li><a href="category.html">Handbags</a></li>
-										<li><a href="category.html">Jewelry</a></li>
-										<li><a href="category.html">Clothing</a></li>
-										<li><a href="category.html">Watches</a></li>
-										<li><a href="category.html">Hats</a></li>
-									</ul>
-								</div>
-								<div class="col-sm-5 col-sm-offset-1 col-xs-12">
-									<span class="block-last">
-										<img src="assets/img/block_menu.jpg" alt="">
-									</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<a href="#">Shop <span class="caret"></span></a>
-						<div class="dropdown mega-menu megamenu2">
-							<div class="row">
-								<div class="col-sm-6 col-xs-12">
-									<ul class="menulinks">
-										<li class="maga-menu-title">
-											<a href="#">Normal Shop Pages</a>
-										</li>
-										<li><a href="category.html">Single Category</a></li>
-										<li><a href="product-details.html">Product Details</a></li>
-										<li><a href="shopping-cart.html">Cart Page</a></li>
-										<li><a href="checkout.html">Checkout Page</a></li>
-										<li><a href="single-shop.html">Seller's Store</a></li>
-										<li><a href="shop-grid.html">Shop Grid Sidebar</a></li>
-										<li><a href="shop-list.html">Shop List Sidebar</a></li>
-										<li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-										<li><a href="order.html">Order Track</a></li>
-									</ul>
-								</div>
-								<div class="col-sm-6 col-xs-12">
-									<ul class="menulinks">
-										<li class="maga-menu-title">
-											<a href="#">Multi-vendor Pages</a>
-										</li>
-										<li><a href="submission.html">Product Submission</a></li>
-										<li><a href="single-shop.html">Seller Store Page</a></li>
-										<li><a href="edit-profile.html">Seller Account</a></li>
-										<li><a href="login.html">Log In</a></li>
-										<li><a href="shop.html">Search</a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li>
-						<a href="#">Pages <span class="caret"></span></a>
-						<ul class="dropdown">
-							<li>
-								<a href="about.html">
-									About Us
-								</a>
-							</li>
-							<li>
-								<a href="services.html">
-									Services
-								</a>
-							</li>
-							<li>
-								<a href="contact.html">
-									Contact Us
-								</a>
-							</li>
-							<li>
-								<a href="product-details.html">
-									Product Details
-								</a>
-							</li>
-							<li>
-								<a href="team.html">
-									Team Member
-								</a>
-							</li>
-							<li>
-								<a href="checkout.html">
-									Checkout
-								</a>
-							</li>
-							<li>
-								<a href="compare.html">
-									Compare
-								</a>
-							</li>
-							<li>
-								<a href="shopping-cart.html">
-									Shopping cart
-								</a>
-							</li>
-							<li>
-								<a href="faq.html">
-									FAQs
-								</a>
-							</li>
-							<li>
-								<a href="wishlist.html">
-									Wishlist
-								</a>
-							</li>
-							<li>
-								<a href="404.html">
-									404 Error
-								</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="#">Blog <span class="caret"></span></a>
-						<ul class="dropdown">
-							<li>
-								<a href="blog.html">
-									Blog Right Sidebar
-								</a>
-							</li>
-							<li>
-								<a href="blog-left-sidebar.html">
-									Blog Left Sidebar
-								</a>
-							</li>
-							<li>
-								<a href="blog-full-width.html">
-									Blog Full Width
-								</a>
-							</li>
-							<li>
-								<a href="blog-details.html">
-									Blog Details
-								</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="contact.html">
-							Contact
-						</a>
-					</li>
-				</ul>
-				<!-- End Navigation List -->
-			</div>
-		</div>
-	</div>
-	<!-- End Header Logo & Naviagtion -->
-
-	<!-- Mobile Menu Start -->
-	<ul class="mobile-menu">
-		<li>
-			<a class="active" href="index.html">
-				Home
-			</a>
-			<ul class="dropdown">
-				<li>
-					<a class="active" href="index.html">Home V1</a>
-				</li>
-				<li>
-					<a href="index-2.html">Home V2</a>
-				</li>
-			</ul>
-		</li>
-		<li>
-			<a href="about.html">About</a>
-		</li>
-		<li>
-			<a href="#">Catalog</a>
-			<ul class="dropdown menulinks">
-				<li class="maga-menu-title">
-					<a href="#">Men</a>
-				</li>
-				<li><a href="category.html">Clothing</a></li>
-				<li><a href="category.html">Handbags</a></li>
-				<li><a href="category.html">Maternity</a></li>
-				<li><a href="category.html">Jewelry</a></li>
-				<li><a href="category.html">Scarves</a></li>
-				<li class="maga-menu-title">
-					<a href="#">Women</a>
-				</li>
-				<li><a href="category.html">Handbags</a></li>
-				<li><a href="category.html">Jewelry</a></li>
-				<li><a href="category.html">Clothing</a></li>
-				<li><a href="category.html">Watches</a></li>
-				<li><a href="category.html">Hats</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="#">Shop</a>
-			<ul class="menulinks">
-				<li class="maga-menu-title">
-					<a href="#">Normal Shop Pages</a>
-				</li>
-				<li><a href="category.html">Single Category</a></li>
-				<li><a href="product-details.html">Product Details</a></li>
-				<li><a href="shopping-cart.html">Cart Page</a></li>
-				<li><a href="checkout.html">Checkout Page</a></li>
-				<li><a href="single-shop.html">Seller's Store</a></li>
-				<li><a href="shop-grid.html">Shop Grid Sidebar</a></li>
-				<li><a href="shop-list.html">Shop List Sidebar</a></li>
-				<li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
-				<li><a href="order.html">Order Track</a></li>
-				<li class="maga-menu-title">
-					<a href="#">Multi-vendor Pages</a>
-				</li>
-				<li><a href="submission.html">Product Submission</a></li>
-				<li><a href="single-shop.html">Seller Store Page</a></li>
-				<li><a href="edit-profile.html">Seller Account</a></li>
-				<li><a href="login.html">Log In</a></li>
-				<li><a href="shop.html">Search</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="#">Pages</a>
-			<ul class="dropdown">
-				<li>
-					<a href="about.html">About Us</a>
-				</li>
-				<li>
-					<a href="services.html">Services</a>
-				</li>
-				<li>
-					<a href="contact.html">Contact Us</a>
-				</li>
-				<li>
-					<a href="product-details.html">Product Details</a>
-				</li>
-				<li>
-					<a href="team.html">Team Member</a>
-				</li>
-				<li>
-					<a href="checkout.html">Checkout</a>
-				</li>
-				<li>
-					<a href="compare.html">Compare</a>
-				</li>
-				<li>
-					<a href="shopping-cart.html">Shopping cart</a>
-				</li>
-				<li>
-					<a href="faq.html">FAQs</a>
-				</li>
-				<li>
-					<a href="wishlist.html">Wishlist</a>
-				</li>
-				<li>
-					<a href="404.html">404 Error</a>
-				</li>
-			</ul>
-		</li>
-		<li>
-			<a href="#">Blog</a>
-			<ul class="dropdown">
-				<li>
-					<a href="blog.html">Blog Right Sidebar</a>
-				</li>
-				<li>
-					<a href="blog-left-sidebar.html">Blog Left Sidebar</a>
-				</li>
-				<li>
-					<a href="blog-full-width.html">Blog Full Width</a>
-				</li>
-				<li>
-					<a href="blog-details.html">Blog Details</a>
-				</li>
-			</ul>
-		</li>
-		<li>
-			<a href="contact.html">Contact</a>
-		</li>
-	</ul>
-	<!-- Mobile Menu End -->
-</nav>
-</div>
-<!-- Header Section End -->
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="index.html">
+					<span class="menu-title">Dashboard</span>
+					<i class="mdi mdi-home menu-icon"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+					<span class="menu-title">Data User</span>
+					<i class="menu-arrow"></i>
+					<i class="mdi mdi-crosshairs-gps menu-icon"></i>
+				</a>
+				<div class="collapse" id="ui-basic">
+					<ul class="nav flex-column sub-menu">
+						<li class="nav-item"> <a class="nav-link" href="pages/ui-features/buttons.html">Admin</a></li>
+						<li class="nav-item"> <a class="nav-link" href="pages/ui-features/typography.html">Pelanggan</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="pages/icons/mdi.html">
+					<span class="menu-title">Kategori</span>
+					<i class="mdi mdi-contacts menu-icon"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="pages/forms/basic_elements.html">
+					<span class="menu-title">Produk</span>
+					<i class="mdi mdi-format-list-bulleted menu-icon"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="pages/charts/chartjs.html">
+					<span class="menu-title">Diskon</span>
+					<i class="mdi mdi-chart-bar menu-icon"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="pages/tables/basic-table.html">
+					<span class="menu-title">Ongkos Kirim</span>
+					<i class="mdi mdi-table-large menu-icon"></i>
+				</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+					<span class="menu-title">Pesanan</span>
+					<i class="menu-arrow"></i>
+					<i class="mdi mdi-medical-bag menu-icon"></i>
+				</a>
+				<div class="collapse" id="general-pages">
+					<ul class="nav flex-column sub-menu">
+						<li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Pesanan Masuk </a></li>
+						<li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Konfirmasi Pembayaran </a></li>
+						<li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Pesanan Diproses </a></li>
+						<li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> Pesanan Dikirim </a></li>
+						<li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> Pesanan Selesai </a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+					<span class="menu-title">Analisis</span>
+					<i class="menu-arrow"></i>
+					<i class="mdi mdi-medical-bag menu-icon"></i>
+				</a>
+				<div class="collapse" id="general-pages">
+					<ul class="nav flex-column sub-menu">
+						<li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Laporan Transaksi </a></li>
+						<li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Analisis Produk </a></li>
+						<li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Analisis Pelanggan </a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<!-- partial -->
