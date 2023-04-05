@@ -25,7 +25,17 @@
 <!-- endinject -->
 <!-- Custom js for this page-->
 <script src="<?= base_url() ?>backend/js/dashboard.js"></script>
+<script src="<?= base_url() ?>backend/js/file-upload.js"></script>
 <!-- End custom js for this page-->
+
+<script>
+	console.log = function() {}
+	$("#produk-diskon").on('change', function() {
+
+		$(".harga").html($(this).find(':selected').attr('data-harga'));
+		$(".harga").val($(this).find(':selected').attr('data-harga'));
+	});
+</script>
 </body>
 
 </html>
