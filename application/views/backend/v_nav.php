@@ -36,25 +36,25 @@
 				</div>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="pages/icons/mdi.html">
+				<a class="nav-link" href="<?= base_url('kategori') ?>">
 					<span class="menu-title">Kategori</span>
 					<i class="mdi mdi-contacts menu-icon"></i>
 				</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="pages/forms/basic_elements.html">
+				<a class="nav-link" href="<?= base_url('produk') ?>">
 					<span class="menu-title">Produk</span>
 					<i class="mdi mdi-format-list-bulleted menu-icon"></i>
 				</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="pages/charts/chartjs.html">
+				<a class="nav-link" href="<?= base_url('diskon') ?>">
 					<span class="menu-title">Diskon</span>
 					<i class="mdi mdi-chart-bar menu-icon"></i>
 				</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="pages/tables/basic-table.html">
+				<a class="nav-link" href="<?= base_url('ongkir') ?>">
 					<span class="menu-title">Ongkos Kirim</span>
 					<i class="mdi mdi-table-large menu-icon"></i>
 				</a>
@@ -67,11 +67,12 @@
 				</a>
 				<div class="collapse" id="general-pages">
 					<ul class="nav flex-column sub-menu">
-						<li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Pesanan Masuk </a></li>
-						<li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Konfirmasi Pembayaran </a></li>
-						<li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Pesanan Diproses </a></li>
-						<li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> Pesanan Dikirim </a></li>
-						<li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> Pesanan Selesai </a></li>
+						<li class="nav-item"> <a class="nav-link" href="<?= base_url('pesanan') ?>"> Pesanan Masuk </a></li>
+						<li class="nav-item"> <a class="nav-link" href="<?= base_url('pesanan/pembayaran') ?>"> Konfirmasi Pembayaran </a></li>
+						<li class="nav-item"> <a class="nav-link" href="<?= base_url('pesanan/proses') ?>"> Pesanan Diproses </a></li>
+						<li class="nav-item"> <a class="nav-link" href="<?= base_url('pesanan/kirim') ?>"> Pesanan Dikirim </a></li>
+						<li class="nav-item"> <a class="nav-link" href="<?= base_url('pesanan/selesai') ?>"> Pesanan Selesai </a></li>
+						<li class="nav-item"> <a class="nav-link" href="<?= base_url('pesanan/batal') ?>"> Pesanan Batal </a></li>
 					</ul>
 				</div>
 			</li>
