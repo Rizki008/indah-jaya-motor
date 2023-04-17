@@ -1,32 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="no-js" lang="en">
+
+<!-- belle/index.html   11 Nov 2019 12:16:10 GMT -->
 
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Belle Multipurpose Bootstrap 4 Html Template</title>
+	<meta name="description" content="description">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="author" content="Ecommerce">
-	<title><?= $title ?></title>
-
 	<!-- Favicon -->
-	<link rel="shortcut icon" href="<?= base_url() ?>frontend/assets/img/favicon.png">
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="<?= base_url() ?>frontend/assets/css/bootstrap.min.css" type="text/css">
-	<!-- Font Awesome CSS -->
-	<link rel="stylesheet" href="<?= base_url() ?>frontend/assets/fonts/font-awesome.min.css" type="text/css">
-	<!-- Line Icons CSS -->
-	<link rel="stylesheet" href="<?= base_url() ?>frontend/assets/fonts/line-icons/line-icons.css" type="text/css">
-	<!-- Main Styles -->
-	<link rel="stylesheet" href="<?= base_url() ?>frontend/assets/css/main.css" type="text/css">
-
-	<!-- Animate CSS -->
-	<link rel="stylesheet" href="<?= base_url() ?>frontend/assets/extras/animate.css" type="text/css">
-	<!-- Owl Carousel -->
-	<link rel="stylesheet" href="<?= base_url() ?>frontend/assets/extras/owl.carousel.css" type="text/css">
-	<link rel="stylesheet" href="<?= base_url() ?>frontend/assets/extras/owl.theme.css" type="text/css">
-	<!-- Slicknav Css -->
-	<link rel="stylesheet" href="<?= base_url() ?>frontend/assets/css/slicknav.css" type="text/css">
-	<!-- Responsive CSS Styles -->
-	<link rel="stylesheet" href="<?= base_url() ?>frontend/assets/css/responsive.css" type="text/css">
-
+	<link rel="shortcut icon" href="<?= base_url() ?>frontend/assets/images/favicon.png" />
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" href="<?= base_url() ?>frontend/assets/css/plugins.css">
+	<!-- Bootstap CSS -->
+	<link rel="stylesheet" href="<?= base_url() ?>frontend/assets/css/bootstrap.min.css">
+	<!-- Main Style CSS -->
+	<link rel="stylesheet" href="<?= base_url() ?>frontend/assets/css/style.css">
+	<link rel="stylesheet" href="<?= base_url() ?>frontend/assets/css/responsive.css">
 </head>
