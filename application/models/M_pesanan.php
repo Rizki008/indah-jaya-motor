@@ -89,6 +89,28 @@ class M_pesanan extends CI_Model
 		$data['transaksi'] = $this->db->query("SELECT * FROM `transaksi` JOIN pengiriman ON transaksi.id_transaksi = pengiriman.id_transaksi JOIN pelanggan ON pelanggan.id_pelanggan=transaksi.id_pelanggan JOIN kecamatan ON kecamatan.id_kecamatan = pengiriman.id_kecamatan WHERE transaksi.id_transaksi='" . $id . "';")->row();
 		return $data;
 	}
+
+	public function kecamatan($id)
+	{
+		$this->db->select('*');
+		$this->db->from('kecamatan');
+		$this->db->where('kode', $id);
+		return $this->db->get()->result();
+	}
+
+	public function pelanggan($id)
+	{
+		$this->db->select('*');
+		$this->db->from('pelanggan');
+		$this->db->where('id_pelanggan', $id);
+		return $this->db->get()->row();
+	}
+
+	public function update_point($id, $data)
+	{
+		$this->db->where('id_pelanggan', $id);
+		$this->db->update('pelanggan', $data);
+	}
 }
 
 /* End of file M_pesanan.php */
