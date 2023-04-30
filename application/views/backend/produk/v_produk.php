@@ -62,13 +62,17 @@
 											<?= $value->nama_kategori ?>
 										</td>
 										<td>
-											<?= $value->harga ?>
+											Rp. <?= number_format($value->harga), 0 ?>
 										</td>
 										<td>
 											<?= $value->stok ?>
 										</td>
 										<td>
-											<?= $value->tipe ?>
+											<?php if ($value->tipe == 1) { ?>
+												<p>Single Produk</p>
+											<?php } elseif ($value->tipe == 2) { ?>
+												<p>Double Produk</p>
+											<?php } ?>
 										</td>
 										<td>
 											<?= $value->deskripsi ?>
