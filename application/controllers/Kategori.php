@@ -32,7 +32,7 @@ class Kategori extends CI_Controller
 			$config['allowed_types'] = 'gif|jpg|png|jpeg';
 			$config['max_size']  = '5000';
 			$this->upload->initialize($config);
-			$field_name = "gambar";
+			$field_name = "img";
 			if (!$this->upload->do_upload($field_name)) {
 				$data = array(
 					'title' => 'Tambah Kategori',
