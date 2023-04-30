@@ -38,8 +38,8 @@
 										<td><?= $value->nm_pel ?></td>
 										<td><?= $value->tgl_transaksi ?></td>
 										<td>Rp. <?= number_format($value->total_bayar)  ?></td>
-										<td><span class="badge bg-primary">Diproses</span> <a href="<?= base_url('Admin/cTransaksi/dikirim/' . $value->id_transaksi) ?>" class="btn btn-success">Kirim</a></td>
-										<td><a href="<?= base_url('Admin/cTransaksi/detail_pesanan/' . $value->id_transaksi) ?>"> <i class="bx bx-dots-vertical-rounded"></i></a></td>
+										<td><span class="badge bg-primary">Diproses</span> <a href="<?= base_url('Pesanan/dikirim/' . $value->id_transaksi) ?>" class="btn btn-success">Kirim</a></td>
+										<td><a href="<?= base_url('pesanan/detail_pesanan/' . $value->id_transaksi) ?>"> Details</a></td>
 									</tr>
 								<?php } ?>
 							</tbody>
